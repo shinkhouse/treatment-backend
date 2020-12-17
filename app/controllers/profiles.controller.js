@@ -42,7 +42,7 @@ exports.getProfile = (req, res) => {
 					err.message ||
 					"Some error occurred while retrieving profiles.",
 			});
-		else res.send(data);
+		else res.send(data[0]);
 	});
 };
 

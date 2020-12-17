@@ -42,7 +42,7 @@ exports.getCalendarEvent = (req, res) => {
 					err.message ||
 					"Some error occurred while retrieving calendarEvents.",
 			});
-		else res.send(data);
+		else res.send(data[0]);
 	});
 };
 

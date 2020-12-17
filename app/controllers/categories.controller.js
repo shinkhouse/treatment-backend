@@ -42,7 +42,7 @@ exports.getCategory = (req, res) => {
 					err.message ||
 					"Some error occurred while retrieving categories.",
 			});
-		else res.send(data);
+		else res.send(data[0]);
 	});
 };
 

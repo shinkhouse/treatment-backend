@@ -42,7 +42,7 @@ exports.getQuestion = (req, res) => {
 					err.message ||
 					"Some error occurred while retrieving questions.",
 			});
-		else res.send(data);
+		else res.send(data[0]);
 	});
 };
 
